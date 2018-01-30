@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'black_diamondregular';
+    src: url('../../dist/fonts/diamond/black_diamond-webfont.woff2') format('woff2'),
+         url('black_diamond-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'nova-regular';
+    src: url('../../dist/fonts/nova/proxima_nova_condensed_regular-webfont.woff2') format('woff2'),
+         url('..proxima_nova_condensed_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$font-family-logo: 'black_diamondregular', sans-serif;
+$font-family-text: 'proxima_nova_cn_rgregular', sans-serif;
+
+$secondary: #1ea592;
+
+$color-background: #c7efee;
+$color-main: #FF5252;
+$base-color: #FF5272;
+$color-active: #FFF;
+$color-link: #FFF;
+
+$button-height: 27px;
+$button-width: 35px;
