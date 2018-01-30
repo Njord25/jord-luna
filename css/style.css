@@ -140,14 +140,29 @@ Main components
   display: flex;
   justify-content: center;
   position: relative;
-  top: 345px;
+  top: 100px;
   color:  #7e7d80;
 }
+
+@media only screen and (min-width:700px) {
+  .title-vocation {
+    position: relative;
+    top: 225px;
+  }
+}
+
 .vocation {
   display: flex;
   justify-content: center;
   position: relative;
-  top: 385px;
+  top: 145px;
+}
+
+@media only screen and (min-width:700px) {
+  .vocation {
+    position: relative;
+    top: 250px;
+  }
 }
 
 .about-title {
