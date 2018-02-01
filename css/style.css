@@ -58,7 +58,7 @@ main {
 a {
   font-family: 'nova-regular';
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 p {
@@ -72,7 +72,7 @@ h3 {
   color: #fff;
   margin: 3em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.8em;
   font-family: 'black_diamondregular';
   letter-spacing: 1px;
 }
@@ -147,7 +147,7 @@ Main components
 @media only screen and (min-width:700px) {
   .title-vocation {
     position: relative;
-    top: 225px;
+    top: 200px;
   }
 }
 
@@ -209,6 +209,7 @@ Main components
 
 .links {
   color: #7f7f80;
+  text-decoration: underline;
 }
 
 .links:hover {
@@ -238,7 +239,6 @@ Main components
     max-width: 400px;
     margin: 0 0 4rem;
     position: relative;
-    z-index: 1;
 }
 @media only screen and (min-width:700px) {
     .card {
@@ -355,7 +355,7 @@ Main components
     font-size: 3.25rem;
   }
   .cd-section p {
-    font-size: 1.25rem;
+    font-size: 1.50rem;
     line-height: 2;
   }
 }
@@ -390,7 +390,7 @@ Main components
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  z-index: 1;
+  z-index: 2;
 }
 .no-touch #cd-vertical-nav li {
   text-align: right;
@@ -426,7 +426,7 @@ Main components
   opacity: 1;
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: #c7918a;
+  background-color: #7f7f80;
   box-shadow: 0 3px 6px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.29);
 }
 .no-touch #cd-vertical-nav .cd-dot {
@@ -449,10 +449,14 @@ Main components
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
   margin-right: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   padding: .4em .5em;
-  color: white;
+  color:  #7f7f80;
+  background-color:  #fff;
+  border-radius: 3px;
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.8em;
+  font-weight: bolder;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
@@ -462,6 +466,7 @@ Main components
   -ms-transform-origin: 100% 50%;
   -o-transform-origin: 100% 50%;
   transform-origin: 100% 50%;
+  z-index: 2;
 }
 
 /* Touch devices */
@@ -510,7 +515,7 @@ Main components
 
 .touch #cd-vertical-nav {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   right: 5%;
   bottom: 30px;
   width: 90%;
@@ -620,7 +625,7 @@ Main components
   display: inline-block;
   text-align: center;
   margin: 1em 1em;
-  padding: 0.3em;
+  padding: 6px;
   font-size: 1em;
 }
 
