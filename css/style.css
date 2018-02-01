@@ -59,6 +59,7 @@ a {
   font-family: 'nova-regular';
   text-decoration: none;
   font-size: 22px;
+  text-shadow: 2px 2px 3px #f5cdd3d6;
 }
 
 p {
@@ -72,9 +73,16 @@ h3 {
   color: #fff;
   margin: 3em;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-family: 'black_diamondregular';
   letter-spacing: 1px;
+  text-shadow: 2px 2px 3px #f5cdd3d6;
+}
+
+@media only screen and (min-width:700px) {
+  h3 {
+    font-size: 1.8em;
+  }
 }
 
 h2 {
@@ -88,6 +96,7 @@ h1 {
   font-family: 'black_diamondregular';
   word-spacing: 1em;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 3px #f5cdd3d6;
 }
 
 /* -------------------------------- 
@@ -192,7 +201,9 @@ Main components
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 57%;
+  width: 50%;
+  text-align: justify;
+  text-shadow: 2px 2px 3px #f5cdd370;
 }
 
 .skills {
@@ -249,11 +260,30 @@ Main components
 }.card-img {
     width: 100%;
     height: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    animation: moveUp 2s ease-in 1.5s forwards;
+    opacity: 0;
+    transform: translateY(5px);
 }
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @media only screen and (min-width:700px) {
     .card-img {
     width: 50%;
-    height: 100%
+    height: 100%;
   }
 }.card-info {
     height: auto;
@@ -302,14 +332,14 @@ Main components
     background-size: contain;
     position: relative;
     top: 11px;
-    margin-right: .5625rem;
 }
 
 .box-image-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10%;
+    justify-content: center;
+    margin: 5% auto;
+    text-align: center;
 }
 .box-image-wrapper+.btn-box {
     margin-top: 1.5rem;
@@ -322,8 +352,27 @@ Main components
     width: 50%;
     position: relative;
     margin-bottom: 1.125rem;
-    color: #fff;
+    animation: moveUp 2s ease-in 500ms forwards;
+    opacity: 0;
+    transform: translateY(2px);
 }
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
 .box-image h4 {
     margin: 0;
 }
@@ -341,10 +390,12 @@ Main components
 }
 @media only screen and (min-width:600px) {
     .box-image {
-    width: 32%}
+    width: 32%;
+    }
 }@media only screen and (min-width:900px) {
     .box-image {
-    width: 24%}
+    width: 25%;
+    }
 }
 .cd-section p {
   line-height: 1.6em;
@@ -448,7 +499,7 @@ Main components
 }
 .no-touch #cd-vertical-nav .cd-label {
   position: relative;
-  margin-right: 10px;
+  margin-right:  10px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   padding: .4em .5em;
   color:  #7f7f80;
@@ -505,6 +556,7 @@ Main components
   left: 0;
   background-color: inherit;
   border-radius: inherit;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.05);
 }
 .touch .cd-nav-trigger span::before {
   top: -9px;
@@ -606,6 +658,7 @@ Main components
   padding: 2em;
   text-align: center;
   border: solid 1.5px white;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.19), 0 3px 6px rgba(0,0,0,0.05);
 }
 
 @media only screen and (min-width: 768px) {
@@ -618,6 +671,7 @@ Main components
 .social-media {
   display: flex;
   justify-content: center;
+  text-shadow: 2px 2px 3px #f5cdd3;
 }
 
 .social-media a {
@@ -625,7 +679,7 @@ Main components
   display: inline-block;
   text-align: center;
   margin: 1em 1em;
-  padding: 6px;
+  padding: 5px;
   font-size: 1em;
 }
 
