@@ -4,9 +4,7 @@
          url('black_diamond-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
 
 @font-face {
     font-family: 'nova-regular';
@@ -14,7 +12,6 @@
          url('..proxima_nova_condensed_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -23,14 +20,10 @@
          url('..proxima_nova_condensed_semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-
 /* -------------------------------- 
-
 Primary style
-
 -------------------------------- */
 html * {
   -webkit-font-smoothing: antialiased;
@@ -59,7 +52,6 @@ a {
   font-family: 'nova-regular';
   text-decoration: none;
   font-size: 22px;
-  text-shadow: 2px 2px 3px #f5cdd3d6;
 }
 
 p {
@@ -100,9 +92,7 @@ h1 {
 }
 
 /* -------------------------------- 
-
 Modules - reusable parts of our design
-
 -------------------------------- */
 .cd-img-replace {
   /* replace text with a background-image */
@@ -113,9 +103,7 @@ Modules - reusable parts of our design
 }
 
 /* -------------------------------- 
-
 Main components 
-
 -------------------------------- */
 .cd-section {
   min-height: 100%;
