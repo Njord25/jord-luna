@@ -47,3 +47,10 @@ jQuery(document).ready(function($){
         );
 	}
 });
+
+window.onload = function(){
+	var charger = document.getElementById('spinner-load');
+
+	charger.style.visibility = 'hidden';
+	charger.style.opacity = '0';
+}
